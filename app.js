@@ -185,7 +185,7 @@ async function fetchRepositories() {
         const projectImages = {
             'thunder-meet-unlimited': 'images/thundercall.png',
             'portfolio': 'images/portfolio.png',
-            'portfolio2.0': 'images/portfolio2.png',
+            'newportfolio': 'images/portfolio2.png',
             'deepguardextension': 'images/deepguard.png',
             'devbrowser': 'images/devbrowser.png',
             'pikabot': 'images/pikabot.png',
