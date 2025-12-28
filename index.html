@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyangshu Banik - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Piyangshu</span>
+            </a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#activity" class="nav-link">Activity</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <div id="theme-switcher" title="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Piyangshu Banik</span></h1>
+                <p class="hero-subtitle">Full Stack Developer & AI/ML Enthusiast</p>
+                <p class="hero-description">I build beautiful, fast, and accessible web applications. Passionate about creating impactful digital experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/PiyangshuBanik" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/piyangshu-banik-93773828b/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/piyangshubanik" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pikastrophel/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar">
+                    <img src="images/profile.jpg" alt="Piyangshu Banik">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer from <strong>Tripura, India</strong>, currently studying at <strong>Chandigarh University</strong>. With 3+ years of experience, I specialize in creating high-performance web applications with beautiful, intuitive interfaces.</p>
+                    <p>My journey started with hardware development and evolved into a deep passion for web technologies. I focus on responsive design, accessibility, and performance optimization to deliver exceptional user experiences.</p>
+                    <p>When I'm not coding, I explore AI/ML applications, contribute to open-source projects, and help others learn web development.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3 id="repo-count">10</h3>
+                        <p>Repositories</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="github-followers">3</h3>
+                        <p>Followers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10</h3>
+                        <p>Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-features">
+                <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized for speed and efficiency</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Works perfectly on all devices</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-universal-access"></i>
+                    <h3>Accessible</h3>
+                    <p>WCAG compliant and inclusive</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI/ML Expertise</h3>
+                    <p>Building intelligent solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- PROJECTS - GITHUB FETCH + MANUAL IMAGES -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="projects-header">A selection of projects that showcase my work across real-time apps, dashboards, and full stack products.</p>
+        
+        <!-- GitHub repos will be loaded here dynamically -->
+        <div class="projects-grid" id="projectsContainer">
+            <!-- Projects populated by app.js -->
+        </div>
+
+        <div class="view-all">
+            <a href="https://github.com/PiyangshuBanik?tab=repositories" target="_blank" class="btn btn-primary">
+                View All Projects <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- SKILLS WITH OFFICIAL LOGOS -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="skills-intro">A stack focused on building performant full stack apps, with strong fundamentals in JavaScript, backend APIs and modern tooling.</p>
+        
+        <div class="skills-grid">
+            <!-- FRONTEND -->
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3>Frontend</h3>
+                    <span class="skill-level-tag">Intermediate</span>
+                </div>
+                <p>Building responsive, accessible and visually polished interfaces.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" alt="HTML5" class="skill-logo" loading="lazy">
+                        HTML5
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" alt="CSS3" class="skill-logo" loading="lazy">
+                        CSS3
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" alt="JavaScript" class="skill-logo" loading="lazy">
+                        JavaScript
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" alt="React" class="skill-logo" loading="lazy">
+                        React
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" alt="Tailwind CSS" class="skill-logo" loading="lazy">
+                        Tailwind
+                    </span>
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3>Backend</h3>
+                    <span class="skill-level-tag">Core</span>
+                </div>
+                <p>Designing RESTful APIs and server-side logic.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg" alt="Node.js" class="skill-logo" loading="lazy">
+                        Node.js
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg" alt="Express" class="skill-logo" loading="lazy">
+                        Express
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg" alt="MongoDB" class="skill-logo" loading="lazy">
+                        MongoDB
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" alt="Python" class="skill-logo" loading="lazy">
+                        Python
+                    </span>
+                </div>
+            </div>
+
+            <!-- AI/ML -->
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3>AI/ML</h3>
+                    <span class="skill-level-tag">Intermediate</span>
+                </div>
+                <p>Experimenting with intelligent features and data-driven systems.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg" alt="TensorFlow" class="skill-logo" loading="lazy">
+                        TensorFlow
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" alt="PyTorch" class="skill-logo" loading="lazy">
+                        PyTorch
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/scikitlearn.svg" alt="Scikit-learn" class="skill-logo" loading="lazy">
+                        Scikit-learn
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/numpy.svg" alt="NumPy" class="skill-logo" loading="lazy">
+                        NumPy
+                    </span>
+                </div>
+            </div>
+
+            <!-- TOOLS & OTHERS -->
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3>Tools & Others</h3>
+                    <span class="skill-level-tag">Workflow</span>
+                </div>
+                <p>Tools that support collaboration, quality and performance.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" alt="Git" class="skill-logo" loading="lazy">
+                        Git
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="skill-logo" loading="lazy">
+                        GitHub
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg" alt="Vercel" class="skill-logo" loading="lazy">
+                        Vercel
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webrtc.svg" alt="WebRTC" class="skill-logo" loading="lazy">
+                        WebRTC
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ACTIVITY -->
+    <section id="activity" class="activity">
+        <div class="container">
+            <h2 class="section-title">My Activity</h2>
+            
+            <div class="activity-card github-activity">
+                <div class="activity-header">
+                    <h3><i class="fab fa-github"></i> GitHub Contributions</h3>
+                    <a href="https://github.com/PiyangshuBanik" target="_blank" class="link-btn">View Profile</a>
+                </div>
+                <div class="contribution-info" id="github-count">
+                    <i class="fas fa-spinner fa-spin"></i> Loading contributions...
+                </div>
+                <div class="graph-wrapper">
+                    <div class="graph-grid" id="githubContributionGraph"></div>
+                </div>
+                <div class="graph-legend">
+                    <span>Less</span>
+                    <div class="legend-boxes">
+                        <div class="legend-box" data-level="0"></div>
+                        <div class="legend-box" data-level="1"></div>
+                        <div class="legend-box" data-level="2"></div>
+                        <div class="legend-box" data-level="3"></div>
+                        <div class="legend-box" data-level="4"></div>
+                    </div>
+                    <span>More</span>
+                </div>
+            </div>
+
+            <div class="activity-card leetcode-activity">
+                <div class="activity-header">
+                    <h3><i class="fas fa-code"></i> LeetCode Statistics</h3>
+                    <a href="https://leetcode.com/u/piyangshubanik2004/" target="_blank" class="link-btn">View Profile</a>
+                </div>
+                <div class="leetcode-stats-grid">
+                    <div class="leetcode-stat">
+                        <div class="stat-value" id="leetcode-total">-</div>
+                        <div class="stat-label">Problems Solved</div>
+                    </div>
+                    <div class="leetcode-stat">
+                        <div class="stat-value" id="leetcode-easy">-</div>
+                        <div class="stat-label">Easy</div>
+                    </div>
+                    <div class="leetcode-stat">
+                        <div class="stat-value" id="leetcode-medium">-</div>
+                        <div class="stat-label">Medium</div>
+                    </div>
+                    <div class="leetcode-stat">
+                        <div class="stat-value" id="leetcode-hard">-</div>
+                        <div class="stat-label">Hard</div>
+                    </div>
+                    <div class="leetcode-stat">
+                        <div class="stat-value" id="leetcode-ranking">-</div>
+                        <div class="stat-label">Ranking</div>
+                    </div>
+                    <div class="leetcode-stat">
+                        <div class="stat-value" id="leetcode-acceptance">-</div>
+                        <div class="stat-label">Acceptance Rate</div>
+                    </div>
+                </div>
+                <div class="graph-wrapper">
+                    <div class="graph-grid" id="leetcodeCalendar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonials-grid" id="testimonialsContainer">
+                <!-- cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project in mind or just want to chat? I'd love to hear from you. Drop me a message and I'll get back to you as soon as possible.</p>
+                    <div class="contact-details">
+                        <a href="mailto:piyangshubanik2004@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p>piyangshubanik2004@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+919863466562" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p>+91 9863466562</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/piyangshu-banik-93773828b/" target="_blank" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <p class="contact-label">LinkedIn</p>
+                                <p>Connect with me</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Piyangshu Banik. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/PiyangshuBanik" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/piyangshu-banik-93773828b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/piyangshubanik" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/pikastrophel/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>emailjs.init("sTIFsYiNgKTO8qSLz");</script>
+    <script src="app.js"></script>
+</body>
+</html>
